@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=44555, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloo.css">
+</head>
+
+<body>
+    <form action="login.html" method="POST">
+        <h1 class="nombre">Registro</h1>
+
+        <section>
+            <p>Nombre completo</p>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana Gomez">
+        </section>
+
+        <section>
+            <p>Correo electrónico</p>
+            <input type="email" id="correo" name="correo" required placeholder="Ej: correo@ejemplo.com">
+        </section>
+
+        <section>
+            <p>Contraseña</p>
+            <input type="password" id="clave" name="clave" required>
+        </section>
+
+        <section>
+            <p>Edad</p>
+            <input type="number" id="edad" name="edad" min="0" max="120">
+        </section>
+
+        <section>
+            <p>Fecha de nacimiento</p>
+            <input type="date" id="fecha" name="fecha">
+        </section>
+
+        <section>
+            <p>Género</p>
+            <section>
+                <input type="radio" id="hombre" name="sexo" value="H">
+                <label for="hombre">Masculino</label>
+            </section>
+            <section>
+                <input type="radio" id="mujer" name="sexo" value="M">
+                <label for="mujer">Femenino</label>
+            </section>
+            <section>
+                <input type="radio" id="otros" name="sexo" value="O">
+                <label for="otros">Otros</label>
+            </section>
+
+        </section>
+
+
+        <section class="intereses">
+            <h3>Intereses</h3>
+
+            <section>
+                <input type="radio" id="tecnologia" name="interes" value="T">
+                <label for="tecnologia">Tecnología</label>
+            </section>
+            <section>
+                <input type="radio" id="deporte" name="interes" value="D">
+                <label for="deporte">Deporte</label>
+            </section>
+            <section>
+                <input type="radio" id="arte" name="interes" value="A">
+                <label for="arte">Arte</label>
+            </section>
+        </section>
+
+        <p>País</p>
+        <select id="pais">name="pais">
+            <option value="uy">Uruguay</option>
+            <option value="ar">Argentina</option>
+            <option value="br">Brasil</option>
+        </select>
+
+        <button id="submit-btn">Registrarse</button>
+    </form>
+</body>
+
+</html>
